@@ -1,0 +1,252 @@
+body {
+  font-family: "public sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0c0c0c;
+}
+
+.hero-img {
+  background-image: url(images/bravi1.jpg);
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  background-size: cover;
+  right: 0;
+  bottom: 0;
+  background-position-x: 40%;
+  filter: opacity(90%) grayscale(100%) brightness(90%);
+  -webkit-animation: fadeIn 2s forwards;
+          animation: fadeIn 2s forwards;
+}
+
+header {
+  color: #0c0c0c;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+header .logo {
+  padding: 1.5em 0 0 1.5em;
+}
+header nav {
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+header nav ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 3em 0 0 0;
+}
+header nav ul li {
+  text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 1.5em;
+  padding-top: 2em;
+}
+header nav ul li a {
+  font-size: 1.5em;
+  font-weight: medium;
+  color: #0c0c0c;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  width: 30px;
+  height: 40px;
+  margin-right: 2em;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+
+.open-nav {
+  transform: translateY(0);
+}
+
+.close {
+  width: 30px;
+  height: 40px;
+  margin-left: 20em;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: introLoad 1s ease-in-out forwards;
+          animation: introLoad 1s ease-in-out forwards;
+}
+.container h1 {
+  font-size: 2em;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-left: 1em;
+  padding-top: 2em;
+}
+.container em {
+  text-decoration: underline;
+}
+.container p {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 4px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  padding-left: 1em;
+  padding-top: 1.5em;
+}
+
+.feature {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.feature h1 {
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+.feature .text {
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 1em;
+  font-size: 0.6em;
+  text-align: right;
+  padding-right: 3.5em;
+}
+.feature hr {
+  width: 70%;
+  color: whitesmoke;
+  margin-left: 2.3em;
+  margin-bottom: 1.5em;
+}
+.feature a {
+  text-decoration: none;
+  color: #0c0c0c;
+  text-transform: uppercase;
+  background: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 1em;
+  padding: 1em;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cta {
+  padding-left: 7em;
+  padding-top: 3em;
+}
+
+.text-btm {
+  padding-top: 24em;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  padding-left: 3em;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 2.4em;
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+footer h1 {
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 2.5em;
+}
+footer hr {
+  width: 70%;
+  margin-right: 4.5em;
+  box-sizing: border-box;
+  margin-bottom: 1.5em;
+}
+@-webkit-keyframes introLoad {
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes introLoad {
+  from {
+    transform: translateX(-800px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-clip-path: polygon(100% 0, 100% 2%, 100% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 100% 2%, 100% 100%, 100% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    -webkit-clip-path: polygon(100% 0, 100% 2%, 100% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 100% 2%, 100% 100%, 100% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+/**
+.wrapper{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    z-index: 1;
+}
+
+section, header{
+    scroll-snap-align: start;
+    z-index: 1;
+}
+
+**//*# sourceMappingURL=style.css.map */

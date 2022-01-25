@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bravi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="hero-img"></div>
+    <header>
+        <h1><a class="logo" href="#">brAvi</a></h1>
+        <nav>
+            <svg class="close" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M103 10.3L92.7 0L51.5 41.2L10.3 0L0 10.3L41.2 51.5L0 92.7L10.3 103L51.5 61.8L92.7 103L103 92.7L61.8 51.5L103 10.3Z" fill="#c0c0c0"/>
+                </svg>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">catalog</a></li>
+                <li><a href="#">galeri</a></li>
+                <li><a href="#">about us</a></li>
+            </ul>
+        </nav>
+        <svg class="menu" viewBox="0 0 53 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M52.9677 0.5H0.5V31.5H52.9677V25.5H6.96774V19.5H52.9677V13H6.96774V6H52.9677V0.5Z" fill="#FFFCFC"/>
+        </svg>  
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <h1>it's always<br> a good day <br>whenever<br> i wear this <em>shirt</em></h1>
+            <p>scrolldown</p>
+    </div>
+    </section>
+
+    <section class="feature">
+
+        <h1>Bravi Project</h1>
+        <hr>
+    <div class="feature-img">
+        <div class="content">
+            <p class="text">all of our product are proudly </p>
+            <img src="images/bravi2.jpg" alt="">
+            <p class="text-btm">made in indonesia</p>
+            <div class="cta"><a href="#">show more</a></div>
+           
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <h1>buy now or cry later</h1>
+        <hr>
+        <img src="images/bravi3.jpg" alt="">
+    </footer>
+
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+
+    </script>
+</body>
+</html>
